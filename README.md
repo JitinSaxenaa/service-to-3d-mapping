@@ -1,102 +1,176 @@
-# Service-to-3D Mapping & Hierarchy Reconstruction
+# Service-to-3D Mapping — GBX-450E Gearbox
 
-Maps textual service/repair instructions to raw, unnamed 3D mesh geometry in a
-chaotic GLB model — no parts catalog, no existing names — using geometric
-clustering + a vision-language agent, and (optionally) rewrites the GLB's
-hierarchy so the file itself mirrors the repair steps.
+Connects a real (and imperfect) workshop manual to a real 3D model — automatically
+figuring out which repair step touches which physical part, and which exact mesh
+pieces represent that part inside the `.glb` file. Handles the messy parts of a
+real maintenance record: a bulletin that corrects the manual, a scanned parts
+catalogue, and a 3D model whose mesh names (`bolt_m6_09__g`, `hexbolt7__g`, ...)
+don't match any of it.
 
-Built for the **Service-to-3D Mapping & Hierarchy Reconstruction** hackathon
-problem statement. Test case: a microscope teardown, 7 repair steps, 249
-unnamed meshes.
+> **Note on scope:** this document describes the GBX-450E gearbox pipeline that
+> is actually in this repo today. An earlier hackathon version of this project
+> targeted a microscope teardown with zero-catalog, fully anonymous mesh names
+> (`Mesh_113`, etc.) — that is a different test case with a different (simpler)
+> matching problem and is **not** what the scripts below implement.
 
 ---
 
-## The problem
+<img width="952" height="641" alt="image" src="https://github.com/user-attachments/assets/ffad84db-08a5-4423-afcf-a39d1b008d55" />
 
-You get:
-- A set of plain-text repair steps (e.g. *"Remove the bottom circuit board"*)
-- A `.glb` 3D model with a flat, chaotic hierarchy — every mesh named
-  something like `Mesh_113`, zero semantic naming, no catalog to look things
-  up in.
 
-You need to figure out, automatically, which 3D mesh(es) correspond to each
-step — down to identifying individual tiny screws — and output a mapping.
-Bonus points for restructuring the GLB itself to match.
+## The problem, in one sentence
 
-## Approach
+> A technician has a PDF that says *"remove both mid-ring bolts"* — but the
+> manual is from 1998, a 2019 bulletin says it's actually **three** bolts now,
+> and neither document tells you which of the 400+ meshes in the 3D model those
+> bolts actually are.
 
-The pipeline runs in four stages:
+This pipeline resolves all three problems automatically:
+1. **Reconciles** the manual against the newer bulletin (bulletin wins conflicts)
+2. **Matches** repair-step text to real catalog parts (text scoring)
+3. **Confirms** those matches visually, against renders of the actual 3D model
+   (local vision AI — no cloud calls)
 
-| Stage | What it does | Script |
-|---|---|---|
-| 1. Parse | Load the GLB, dump every mesh's vertex count, bounding box, extent, centroid, parent node | `parse_glb.py` |
-| 2. Cluster | Group near-identical meshes by (vertex count, size) — catches repeated hardware like screws/clips without needing to look at them individually | (part of `parse_glb.py`) |
-| 3. Render | Headless-render the full assembly, plus one highlighted (red) view per cluster/large mesh, so the pieces are actually *visible* | `render_views.py` |
-| 4. Match | Feed all renders + all step text to a vision-language model in one pass; it reasons across steps and images and returns a structured mapping | `match_agent.py` |
+---
 
-**Why this order:** geometry clustering (stage 2) is cheap and deterministic
-— it does the "distinguish tiny screws" work before any AI call, so the
-vision model only has to reason about ~28 grouped candidates instead of all
-249 individual meshes one-by-one. That's the "agentic harness" efficiency
-judges are scoring.
+## Pipeline overview
 
-### Why not a 3D-only or text-only approach?
-- Geometry alone (size/position) can't tell you a mesh is a "circuit board"
-  vs. a "sample clip" — need visual/semantic reasoning.
-- Text alone has nothing to ground itself in — there's no parts catalog.
-- Combining both (cluster on geometry, identify on vision) is cheaper and
-  more accurate than brute-forcing a VLM call per individual mesh.
+```mermaid
+flowchart TD
+    subgraph SRC["📄 Source documents (messy, sometimes conflicting)"]
+        A1[WM-GBX-450E_service_manual.pdf<br/>1998/2004/2019 workshop manual]
+        A2[IPC-GBX-450E_parts_catalogue.pdf<br/>official parts catalogue]
+        A3[service_bulletin_SB-2019-04.md<br/>corrections — authoritative]
+        A4[gearbox_service_unit.glb<br/>3D model, unnamed/messy mesh names]
+    end
 
-## Pipeline flow
+    subgraph P1["Stage 1 — Read the 3D model"]
+        B1[parse_glb.py]
+    end
+
+    subgraph P2["Stage 2 — Build one clean parts list"]
+        B2[reconcile_parts.py]
+        B3[(canonical_parts.json<br/>32 parts + step_corrections)]
+    end
+
+    subgraph P3["Stage 3 — Link mesh geometry to real parts"]
+        B4[mesh ⇄ part name matching]
+        B5[(matched_clusters.json<br/>part_id → candidate mesh_ids)]
+    end
+
+    subgraph P4["Stage 4 — Render each part, highlighted"]
+        B6[render_family_views_v2.py]
+        B7[(renders/family_&lt;PART_ID&gt;.png)]
+    end
+
+    subgraph P5["Stage 5 — Connect repair steps to parts"]
+        B8["Round 1: text scoring<br/>(candidates_for_step)"]
+        B9[(step_candidates.json)]
+        B10["Round 2: vision confirmation<br/>(qwen2.5vl:7b via Ollama, local)"]
+        B11[(step_mesh_matches.json<br/>✅ FINAL deliverable)]
+    end
+
+    A4 --> B1 --> B4
+    A1 --> B2
+    A2 --> B2
+    A3 --> B2
+    B2 --> B3
+    B3 --> B4
+    B4 --> B5
+    B3 --> B6
+    B5 --> B6
+    B6 --> B7
+    A1 --> B8
+    B3 --> B8
+    B8 --> B9
+    B9 --> B10
+    B5 --> B10
+    B7 --> B10
+    B10 --> B11
+```
+
+---
+
+## Why two rounds of matching (Stage 5)?
+
+Round 1 is cheap (~milliseconds, no AI) but dumb — it only sees words. Round 2 is
+slower but actually looks at the model. Splitting them keeps the expensive vision
+calls to a handful of pre-filtered candidates per step instead of all 32 parts.
 
 ```mermaid
 flowchart LR
-    A[steps.json 7 repair steps] --> D[match_agent.py]
-    B[microscope.glb 249 unnamed meshes] --> C[parse_glb.py]
-    C --> E[mesh_metadata.json + 14 hardware clusters]
-    E --> F[render_views.py]
-    F --> G[renders/ 28 highlighted images]
-    G --> D
-    D --> H[mapping.json core deliverable]
-    H --> I[restructure_glb.py bonus]
-    I --> J[microscope_restructured.glb]
+    S[Repair step text<br/>e.g. 'Free the A-side mid-ring bolts'] --> R1
 
-    style H fill:#c0392b,color:#fff
-    style B fill:#2c3e50,color:#fff
-    style A fill:#2c3e50,color:#fff
+    subgraph R1["Round 1 — text scoring, no AI"]
+        direction TB
+        T1[Tokenize step text] --> T2[Score every part's name<br/>against step tokens]
+        T2 --> T3[Keep parts above threshold<br/>top 3, ties included]
+    end
+
+    R1 --> C["Shortlist: 2–8 candidate parts<br/>e.g. HXB-122, BH-128, GR-101, SR-110..."]
+    C --> R2
+
+    subgraph R2["Round 2 — vision confirmation"]
+        direction TB
+        V1[Show render of each candidate,<br/>highlighted in the 3D model] --> V2[Ask local vision AI:<br/>is this really involved?]
+        V2 --> V3["true / false + confidence +<br/>reasoning, per candidate"]
+    end
+
+    R2 --> OUT[["step_mesh_matches.json<br/>only visually-confirmed parts"]]
 ```
 
-## The data, visualized
+**Round 1 example** — step `10-20`, *"Remove front cover flange bolts"*:
 
-**249 meshes, zero names, 14 repeated-hardware clusters found automatically:**
+| part_id | description | score |
+|---|---|---|
+| **GBX-HXB-122** | Cover Hex Bolt (DIN 933) | **0.4286** ← clear winner |
+| GBX-BH-128 | Bearing Housing Boss | 0.1818 |
+| GBX-MF-126 | Mounting Flange | 0.1818 |
 
-![Cluster sizes](assets/cluster_sizes.png)
+**Round 2** then shows the AI the actual highlighted render of `GBX-HXB-122` and
+the *rejected* candidates (like `GBX-GR-101`, an internal ring gear that showed
+up in another step's shortlist by word coincidence) and gets back a verdict:
 
-**Size distribution across the whole model — the red band is where fasteners live:**
+```json
+"GBX-GR-101": {
+  "involved": false,
+  "confidence": "low",
+  "reasoning": "GBX-GR-101 is an Internal Ring Gear and does not match the
+                description of bolts or flange components."
+}
+```
 
-![Mesh size distribution](assets/mesh_size_distribution.png)
+That's the AI actually looking at a picture and overriding a bad text-only guess
+— the whole point of running a second round.
 
-This is the evidence for the clustering claim in the Approach section above —
-14 groups of near-identical meshes, concentrated in the sub-10mm range,
-found purely from geometry before any AI call.
+---
 
 ## Repo structure
 
 ```
 service-to-3d-mapping/
-├── microscope.glb                  input 3D model (not committed if large, see .gitignore)
-├── steps.json                      input repair steps
-├── parse_glb.py                    stage 1+2: metadata extraction + clustering
-├── mesh_metadata.json              output of stage 1+2
-├── render_views.py                 stage 3: headless rendering
-├── renders/                        output of stage 3 (28 PNGs)
-├── match_agent.py                  stage 4: VLM matching -> mapping.json
-├── mapping.json                    core deliverable: step -> mesh IDs
-├── restructure_glb.py              bonus: renames/regroups the GLB hierarchy
-├── microscope_restructured.glb     bonus deliverable
-├── assets/                         charts used in this README
-└── README.md
+├── gearbox_service_unit.glb            input 3D model
+├── WM-GBX-450E_service_manual.pdf       workshop manual (source, has known errors)
+├── IPC-GBX-450E_parts_catalogue.pdf     illustrated parts catalogue (source)
+├── service_bulletin_SB-2019-04.md       corrections — authoritative over both PDFs
+├── work_order_WO-7741.txt               real repair job record (ground truth)
+├── inspection_log.csv / parts_xref.csv  supporting QA / supplier data
+│
+├── parse_glb.py                        Stage 1: read mesh geometry from .glb
+├── reconcile_parts.py                  Stage 2: merge manual + catalogue + bulletin
+├── verify_clusters.py                  mesh-clustering QA pass
+├── render_family_views_v2.py           Stage 4: per-part highlighted renders
+├── match_agent.py                      Stage 5: step ⇄ part ⇄ mesh matching
+│
+├── service_steps.json                  17 repair steps, step_id-keyed
+├── canonical_parts.json                32 parts + 3 bulletin step_corrections
+├── matched_clusters.json               part_id → candidate mesh_ids (16 parts)
+├── renders/family_<PART_ID>.png        21 highlighted render images
+├── step_candidates.json                Round 1 output (text-scoring shortlist)
+└── step_mesh_matches.json              Round 2 output — FINAL deliverable
 ```
+
+---
 
 ## Setup
 
@@ -104,46 +178,152 @@ service-to-3d-mapping/
 pip install trimesh pygltflib matplotlib pillow requests
 ```
 
-**For matching, pick ONE:**
+Vision matching runs **locally**, no API key or internet required:
 
-**Option A — Claude API** (paid, most accurate, ~$0.05 per full run)
-```bash
-pip install anthropic
-export ANTHROPIC_API_KEY="sk-ant-..."
-```
-
-**Option B — Ollama, local, free**
 ```bash
 ollama pull qwen2.5vl:7b
+ollama serve
 ```
+
+Requires Python 3.8+ (tested on 3.8.7 — `match_agent.py` deliberately avoids
+`str.removeprefix`/`removesuffix`, which are 3.9+ only).
 
 ## How to run
 
 ```bash
 python parse_glb.py
-python render_views.py
-python match_agent.py
-python restructure_glb.py
+python reconcile_parts.py
+python render_family_views_v2.py --glb gearbox_service_unit.glb \
+       --matches matched_clusters.json --out-dir renders
+python match_agent.py --threshold 0.15
 ```
 
-## Output format — mapping.json
+Useful flags on `match_agent.py`:
+
+| flag | default | what it does |
+|---|---|---|
+| `--dry-run` | off | Round 1 only — skip Ollama entirely, just inspect candidate scoring |
+| `--threshold` | `0.15` | minimum text-score to become a candidate |
+| `--top-n` | `3` | max candidates kept per step (tie-aware — see below) |
+| `--candidates-out` | `step_candidates.json` | Round 1 output path |
+| `--out` | `step_mesh_matches.json` | Round 2 (final) output path |
+
+Both output files are written **incrementally, after every step** — not just at
+the end — so a slow or interrupted run doesn't lose completed work.
+
+---
+
+## Scoring, and the bug we actually hit
+
+The Round 1 scorer had to survive three real failure modes, found while
+validating against ground truth:
+
+```mermaid
+flowchart TD
+    P["Problem: GBX-HXB-122 scored 0 candidates<br/>for step 20-30, despite being the correct part"]
+    P --> F1["Fix 1 — Pluralization<br/>'bolts' ≠ 'bolt' as bare strings"]
+    F1 --> F2["Fix 2 — Self-inflicted dilution<br/>our own correction-wrapper phrasing<br/>('CORRECTION per service bulletin,<br/>authoritative, overrides...') was<br/>counted as step content"]
+    F2 --> F3["Fix 3 — Name-token weighting<br/>exact part-name hits count 4× toward<br/>the score, so one real signal survives<br/>a long boilerplate paragraph"]
+    F3 --> R["✅ GBX-HXB-122 now scores correctly<br/>at all 3 of its real steps"]
+```
+
+Result: `score_text_against_part()` weights exact part-name-token matches
+(e.g. "bolt" hitting `GBX-HXB-122`'s name "Cover Hex Bolt") **4×** over
+incidental word overlap, and scores against the correction's actual content
+(`was`/`is`/`note` fields) rather than the human-facing wrapper text.
+
+`--top-n` trims to the top 3 scores by default, but **never mid-tie** — if the
+3rd-place score is tied with more candidates below it, all ties are kept. This
+matters concretely: step 20-30 has a genuine 5-way tie at score 0.16, and a
+blind top-3 cut would silently drop the correct part again.
+
+### Validated against real ground truth
+
+`canonical_parts.json` happens to contain real consumption records
+(`work_order_WO-7741_consumption[].steps`) tying 8 parts to their actual repair
+steps from a real job. All 10 part↔step pairs recover correctly with the
+current scorer:
+
+| part | steps | recovered? |
+|---|---|---|
+| GBX-HXB-122 | 10-20, 20-30, 30-10 | ✅ all 3 |
+| GBX-CL-111 | 20-60 | ✅ |
+| GBX-SCS-121 | 30-20 | ✅ |
+| GBX-SR-110, GBX-DS-125, GBX-SHM-118 | 30-70 | ✅ all 3 |
+| GBX-NB-129 | 30-60 | ✅ |
+| GBX-TW-109 | 20-60 | ✅ |
+
+---
+
+## Output format
+
+**`step_candidates.json`** (Round 1 — text scoring only):
 
 ```json
 {
-  "1": {
-    "mesh_ids": ["Mesh_52", "Mesh_54"],
-    "source_renders": ["cluster_03.png"],
-    "reasoning": "matches the electronics drawer slide mechanism"
+  "10-20": {
+    "step_id": "10-20",
+    "step_title": "Remove front cover flange bolts",
+    "top_part_id": "GBX-HXB-122",
+    "part_to_remove": "Cover Hex Bolt (DIN 933)",
+    "top_score": 0.4286,
+    "candidates": [
+      {"part_id": "GBX-HXB-122", "description": "Cover Hex Bolt (DIN 933)", "score": 0.4286},
+      {"part_id": "GBX-BH-128", "description": "Bearing Housing Boss", "score": 0.1818}
+    ]
   }
 }
 ```
 
+> ⚠️ `top_part_id` is only meaningful when one score clearly leads. When
+> candidates are tied (e.g. step 20-30), it picks arbitrarily among the ties —
+> treat the full `candidates` list as the honest answer in that case, not
+> `top_part_id` alone.
+
+**`step_mesh_matches.json`** (Round 2 — vision-confirmed, final deliverable):
+
+```json
+{
+  "10-20": {
+    "GBX-HXB-122": {
+      "involved": true,
+      "mesh_ids": ["bolt_m6_09__g", "hexbolt7__g"],
+      "confidence": "high",
+      "reasoning": "Matches the description of Cover Hex Bolt (DIN 933) and is involved in removing front cover flange bolts."
+    },
+    "GBX-GR-101": {
+      "involved": false,
+      "confidence": "low",
+      "reasoning": "Internal Ring Gear does not match the description of bolts or flange components."
+    }
+  }
+}
+```
+
+---
+
 ## Known limitations
 
-- Rendering uses matplotlib (headless, no GPU needed) rather than a proper raster/raytracer.
-- The VLM only sees the render angles generated; a fully occluded part could be missed.
-- Fastener clustering groups by geometry similarity, not by which step uses them.
+- **Fixed camera angle per render** — `render_family_views_v2.py` renders one
+  view per part; a highlighted part that's occluded from that angle could be
+  incorrectly rejected by the vision model, since it can't "rotate" the model
+  like a human could.
+- **The vision model never touches raw 3D geometry** — it reasons over flat
+  PNG snapshots (matplotlib renders), not the `.glb` directly. 3D-awareness
+  comes from the rendering stage, not the AI.
+- **`matched_clusters.json` covers 16 of 32 parts** — parts with no distinct
+  mesh signature (or none needed for this test unit) have no candidate
+  mesh_ids, so Round 2 has nothing to confirm against for those even if
+  Round 1 finds a text match.
+- **Round 1 tie-breaking (`top_part_id`)** is arbitrary among equal scores —
+  don't treat it as a confident single answer without checking `candidates`.
+- **No retry on malformed model output** — a non-JSON Ollama response for a
+  step is caught and logged as `{"error": ...}` rather than crashing the run,
+  but that step is not re-attempted automatically.
 
-## Credits / stack
+---
 
-Python, trimesh, pygltflib, matplotlib, Claude / Ollama.
+## Stack
+
+Python · trimesh · pygltflib · matplotlib · Ollama (`qwen2.5vl:7b`, local, no
+API key or cloud calls)
