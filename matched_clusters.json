@@ -1,0 +1,1193 @@
+{
+  "clusters": {
+    "GBX-GR-101": {
+      "description": "Internal Ring Gear",
+      "catalog_qty": 2,
+      "found_count": 6,
+      "qty_match": false,
+      "mesh_ids": [
+        "zahnrad_gr.029__g",
+        "helix_gr_02_rev04__g",
+        "helix_gr13_copy__g",
+        "gr_ring.023 (2)__g",
+        "helix_gr_08_x__g",
+        "snapring.006_final_FINAL2__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "zahnrad_gr.029__g",
+          "raw_name_hint": "zahnrad_gr.029__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "helix_gr_02_rev04__g",
+          "raw_name_hint": "helix_gr_02_rev04__g",
+          "score": 0.333
+        },
+        {
+          "mesh_id": "helix_gr13_copy__g",
+          "raw_name_hint": "helix_gr13_copy__g",
+          "score": 0.333
+        },
+        {
+          "mesh_id": "gr_ring.023 (2)__g",
+          "raw_name_hint": "gr_ring.023 (2)__g",
+          "score": 0.667
+        },
+        {
+          "mesh_id": "helix_gr_08_x__g",
+          "raw_name_hint": "helix_gr_08_x__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "snapring.006_final_FINAL2__g",
+          "raw_name_hint": "snapring.006_final_FINAL2__g",
+          "score": 0.694
+        }
+      ]
+    },
+    "GBX-DP-130": {
+      "description": "Locating Dowel Pin (DIN 6325)",
+      "catalog_qty": 6,
+      "found_count": 4,
+      "qty_match": false,
+      "mesh_ids": [
+        "pin_loc.005_rev04__g",
+        "dowel.003__g",
+        "dowel_22_x__g",
+        "dowel_16_final__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "pin_loc.005_rev04__g",
+          "raw_name_hint": "pin_loc.005_rev04__g",
+          "score": 0.333
+        },
+        {
+          "mesh_id": "dowel.003__g",
+          "raw_name_hint": "dowel.003__g",
+          "score": 1.0
+        },
+        {
+          "mesh_id": "dowel_22_x__g",
+          "raw_name_hint": "dowel_22_x__g",
+          "score": 1.0
+        },
+        {
+          "mesh_id": "dowel_16_final__g",
+          "raw_name_hint": "dowel_16_final__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-HXB-122": {
+      "description": "Cover Hex Bolt (DIN 933)",
+      "catalog_qty": 16,
+      "found_count": 9,
+      "qty_match": false,
+      "mesh_ids": [
+        "bolt_m6_09__g",
+        "hexbolt7__g",
+        "hexbolt.020_v3__g",
+        "bolt_m6.022_copy__g",
+        "hexbolt32_copy__g",
+        "bolt_m6_31_final__g",
+        "bolt_m6_21_neu__g",
+        "bolt_m6_38_rev04__g",
+        "hexbolt24_neu__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "bolt_m6_09__g",
+          "raw_name_hint": "bolt_m6_09__g",
+          "score": 1.0
+        },
+        {
+          "mesh_id": "hexbolt7__g",
+          "raw_name_hint": "hexbolt7__g",
+          "score": 0.85
+        },
+        {
+          "mesh_id": "hexbolt.020_v3__g",
+          "raw_name_hint": "hexbolt.020_v3__g",
+          "score": 0.85
+        },
+        {
+          "mesh_id": "bolt_m6.022_copy__g",
+          "raw_name_hint": "bolt_m6.022_copy__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "hexbolt32_copy__g",
+          "raw_name_hint": "hexbolt32_copy__g",
+          "score": 0.425
+        },
+        {
+          "mesh_id": "bolt_m6_31_final__g",
+          "raw_name_hint": "bolt_m6_31_final__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "bolt_m6_21_neu__g",
+          "raw_name_hint": "bolt_m6_21_neu__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "bolt_m6_38_rev04__g",
+          "raw_name_hint": "bolt_m6_38_rev04__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "hexbolt24_neu__g",
+          "raw_name_hint": "hexbolt24_neu__g",
+          "score": 0.425
+        }
+      ]
+    },
+    "GBX-SRP-119": {
+      "description": "Seal Retainer Plate",
+      "catalog_qty": 2,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "seal_plate.010_v3__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "seal_plate.010_v3__g",
+          "raw_name_hint": "seal_plate.010_v3__g",
+          "score": 1.0
+        }
+      ]
+    },
+    "GBX-SCS-121": {
+      "description": "Socket Cap Screw (DIN 912)",
+      "catalog_qty": 6,
+      "found_count": 3,
+      "qty_match": false,
+      "mesh_ids": [
+        "capscrw.037_rev04__g",
+        "capscrw_37__g",
+        "capscrw21__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "capscrw.037_rev04__g",
+          "raw_name_hint": "capscrw.037_rev04__g",
+          "score": 0.333
+        },
+        {
+          "mesh_id": "capscrw_37__g",
+          "raw_name_hint": "capscrw_37__g",
+          "score": 0.667
+        },
+        {
+          "mesh_id": "capscrw21__g",
+          "raw_name_hint": "capscrw21__g",
+          "score": 0.667
+        }
+      ]
+    },
+    "GBX-BRG-123": {
+      "description": "Cylindrical Roller Bearing",
+      "catalog_qty": 4,
+      "found_count": 5,
+      "qty_match": false,
+      "mesh_ids": [
+        "roller_brg.035_final__g",
+        "brg_cyl.030 (2)__g",
+        "roller_brg_30_rev04__g",
+        "brg_cyl_24 (2)__g",
+        "brg_cyl14__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "roller_brg.035_final__g",
+          "raw_name_hint": "roller_brg.035_final__g",
+          "score": 0.667
+        },
+        {
+          "mesh_id": "brg_cyl.030 (2)__g",
+          "raw_name_hint": "brg_cyl.030 (2)__g",
+          "score": 0.333
+        },
+        {
+          "mesh_id": "roller_brg_30_rev04__g",
+          "raw_name_hint": "roller_brg_30_rev04__g",
+          "score": 0.667
+        },
+        {
+          "mesh_id": "brg_cyl_24 (2)__g",
+          "raw_name_hint": "brg_cyl_24 (2)__g",
+          "score": 0.333
+        },
+        {
+          "mesh_id": "brg_cyl14__g",
+          "raw_name_hint": "brg_cyl14__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-KEY-113": {
+      "description": "Parallel Shaft Key (DIN 6885)",
+      "catalog_qty": 2,
+      "found_count": 2,
+      "qty_match": true,
+      "mesh_ids": [
+        "key_par19_v3__g",
+        "key_par_10__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "key_par19_v3__g",
+          "raw_name_hint": "key_par19_v3__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "key_par_10__g",
+          "raw_name_hint": "key_par_10__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-SH-114": {
+      "description": "Layshaft / Countershaft",
+      "catalog_qty": 2,
+      "found_count": 2,
+      "qty_match": true,
+      "mesh_ids": [
+        "layshft6__g",
+        "layshft.035 (2)__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "layshft6__g",
+          "raw_name_hint": "layshft6__g",
+          "score": 0.933
+        },
+        {
+          "mesh_id": "layshft.035 (2)__g",
+          "raw_name_hint": "layshft.035 (2)__g",
+          "score": 0.467
+        }
+      ]
+    },
+    "GBX-OS-124": {
+      "description": "Radial Oil Seal (Simmerring)",
+      "catalog_qty": 4,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "simmerring.023 (2)__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "simmerring.023 (2)__g",
+          "raw_name_hint": "simmerring.023 (2)__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-GC-107": {
+      "description": "Cluster Gear",
+      "catalog_qty": 2,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "cluster_blk14 (2)__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "cluster_blk14 (2)__g",
+          "raw_name_hint": "cluster_blk14 (2)__g",
+          "score": 0.333
+        }
+      ]
+    },
+    "GBX-GI-106": {
+      "description": "Idler Gear",
+      "catalog_qty": 2,
+      "found_count": 2,
+      "qty_match": true,
+      "mesh_ids": [
+        "idler_zw.033__g",
+        "idler_zw.013__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "idler_zw.033__g",
+          "raw_name_hint": "idler_zw.033__g",
+          "score": 0.5
+        },
+        {
+          "mesh_id": "idler_zw.013__g",
+          "raw_name_hint": "idler_zw.013__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-SR-110": {
+      "description": "External Snap Ring",
+      "catalog_qty": 2,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "endcap7 (2)__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "endcap7 (2)__g",
+          "raw_name_hint": "endcap7 (2)__g",
+          "score": 0.3
+        }
+      ]
+    },
+    "GBX-BRP-120": {
+      "description": "Breather / Filler Plug",
+      "catalog_qty": 1,
+      "found_count": 1,
+      "qty_match": true,
+      "mesh_ids": [
+        "breather_20_imp__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "breather_20_imp__g",
+          "raw_name_hint": "breather_20_imp__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-GLG-102": {
+      "description": "Output Spur Gear",
+      "catalog_qty": 2,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "spur_out_04 (2)__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "spur_out_04 (2)__g",
+          "raw_name_hint": "spur_out_04 (2)__g",
+          "score": 0.333
+        }
+      ]
+    },
+    "GBX-HSG-100": {
+      "description": "Gearbox Housing Half",
+      "catalog_qty": 2,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "gehaeuse_half_11__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "gehaeuse_half_11__g",
+          "raw_name_hint": "gehaeuse_half_11__g",
+          "score": 0.5
+        }
+      ]
+    },
+    "GBX-CL-111": {
+      "description": "Internal Circlip (DIN 472)",
+      "catalog_qty": 2,
+      "found_count": 1,
+      "qty_match": false,
+      "mesh_ids": [
+        "circlip_i.002_x__g"
+      ],
+      "match_detail": [
+        {
+          "mesh_id": "circlip_i.002_x__g",
+          "raw_name_hint": "circlip_i.002_x__g",
+          "score": 1.0
+        }
+      ]
+    }
+  },
+  "unmatched_meshes": [
+    {
+      "mesh_id": "sechskant34_v3__g",
+      "raw_name_hint": "sechskant34_v3__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.086__g",
+      "raw_name_hint": "Object.086__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "solid_52__g",
+      "raw_name_hint": "solid_52__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "body_x75__g",
+      "raw_name_hint": "body_x75__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "zahnkranz1_copy__g",
+      "raw_name_hint": "zahnkranz1_copy__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "sechskant.034__g",
+      "raw_name_hint": "sechskant.034__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.378__g",
+      "raw_name_hint": "Object.378__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "sechskant28 (2)__g",
+      "raw_name_hint": "sechskant28 (2)__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "nadellager_02_x__g",
+      "raw_name_hint": "nadellager_02_x__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "zylschraube_29_neu__g",
+      "raw_name_hint": "zylschraube_29_neu__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "sechskant29_imp__g",
+      "raw_name_hint": "sechskant29_imp__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.157__g",
+      "raw_name_hint": "Object.157__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "abschlussdeckel.018_imp__g",
+      "raw_name_hint": "abschlussdeckel.018_imp__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "lagergehaeuse.026_neu__g",
+      "raw_name_hint": "lagergehaeuse.026_neu__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "montageflansch30_x__g",
+      "raw_name_hint": "montageflansch30_x__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.900__g",
+      "raw_name_hint": "Object.900__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "dichthalter.033 (2)__g",
+      "raw_name_hint": "dichthalter.033 (2)__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "solid_33__g",
+      "raw_name_hint": "solid_33__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "Object.417__g",
+      "raw_name_hint": "Object.417__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "mesh_b4502f__g",
+      "raw_name_hint": "mesh_b4502f__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.662__g",
+      "raw_name_hint": "Object.662__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "schraegverz.008 (2)__g",
+      "raw_name_hint": "schraegverz.008 (2)__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "scheibe.021_x__g",
+      "raw_name_hint": "scheibe.021_x__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "body_x348__g",
+      "raw_name_hint": "body_x348__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "mesh_e73f3a__g",
+      "raw_name_hint": "mesh_e73f3a__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "radblock_25_old_DONOTUSE__g",
+      "raw_name_hint": "radblock_25_old_DONOTUSE__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "nadellager.034__g",
+      "raw_name_hint": "nadellager.034__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "nadellager_39_x__g",
+      "raw_name_hint": "nadellager_39_x__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.589__g",
+      "raw_name_hint": "Object.589__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "mesh_7784d5__g",
+      "raw_name_hint": "mesh_7784d5__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "abtriebswelle_10__g",
+      "raw_name_hint": "abtriebswelle_10__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "solid_61__g",
+      "raw_name_hint": "solid_61__g",
+      "reason": "no usable tokens after cleaning"
+    },
+    {
+      "mesh_id": "body_x717__g",
+      "raw_name_hint": "body_x717__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "body_x354__g",
+      "raw_name_hint": "body_x354__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "mesh_efd324__g",
+      "raw_name_hint": "mesh_efd324__g",
+      "best_candidate": null,
+      "best_score": 0.0,
+      "reason": "no candidate scored > 0"
+    },
+    {
+      "mesh_id": "Object.676__g",
+      "raw_name_hint": "Object.676__g",
+      "reason": "no usable tokens after cleaning"
+    }
+  ],
+  "ambiguous_meshes": [
+    {
+      "mesh_id": "cap_brg_07_rev04__g",
+      "raw_name_hint": "cap_brg_07_rev04__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-EC-127",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-BC-108",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-BRG-123",
+          "score": 0.333
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "brg_cap_22_copy__g",
+      "raw_name_hint": "brg_cap_22_copy__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-EC-127",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-BC-108",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-BRG-123",
+          "score": 0.333
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "oilseal.038_old_DONOTUSE__g",
+      "raw_name_hint": "oilseal.038_old_DONOTUSE__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-SRP-119",
+          "score": 0.283
+        },
+        {
+          "part_no": "GBX-OS-124",
+          "score": 0.283
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "skt_schr.035_rev04__g",
+      "raw_name_hint": "skt_schr.035_rev04__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-SCS-121",
+          "score": 0.222
+        },
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.2
+        },
+        {
+          "part_no": "GBX-SHM-118",
+          "score": 0.2
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "needle_brg7_imp__g",
+      "raw_name_hint": "needle_brg7_imp__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-BRG-123",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-NB-129",
+          "score": 0.333
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "skt_schr_32_neu__g",
+      "raw_name_hint": "skt_schr_32_neu__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-SCS-121",
+          "score": 0.222
+        },
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.2
+        },
+        {
+          "part_no": "GBX-SHM-118",
+          "score": 0.2
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "thr_washer.010_rev04__g",
+      "raw_name_hint": "thr_washer.010_rev04__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-FW-112",
+          "score": 0.333
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "montageflansch.012_final_FINAL2__g",
+      "raw_name_hint": "montageflansch.012_final_FINAL2__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.41
+        },
+        {
+          "part_no": "GBX-CL-111",
+          "score": 0.41
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "cap_brg3_final_FINAL2__g",
+      "raw_name_hint": "cap_brg3_final_FINAL2__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.308
+        },
+        {
+          "part_no": "GBX-CL-111",
+          "score": 0.308
+        },
+        {
+          "part_no": "GBX-EC-127",
+          "score": 0.25
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "cplg_flg_04 (2)__g",
+      "raw_name_hint": "cplg_flg_04 (2)__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-BRP-120",
+          "score": 0.25
+        },
+        {
+          "part_no": "GBX-CF-117",
+          "score": 0.222
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "skt_schr2__g",
+      "raw_name_hint": "skt_schr2__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-SCS-121",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.3
+        },
+        {
+          "part_no": "GBX-SHM-118",
+          "score": 0.3
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "needle_brg.014_final__g",
+      "raw_name_hint": "needle_brg.014_final__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-BRG-123",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-NB-129",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.205
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "thr_washer.003 (2)__g",
+      "raw_name_hint": "thr_washer.003 (2)__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-FW-112",
+          "score": 0.333
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "zylschraube8_final__g",
+      "raw_name_hint": "zylschraube8_final__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.308
+        },
+        {
+          "part_no": "GBX-CL-111",
+          "score": 0.308
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "lagergehaeuse.007_final_FINAL2__g",
+      "raw_name_hint": "lagergehaeuse.007_final_FINAL2__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.41
+        },
+        {
+          "part_no": "GBX-CL-111",
+          "score": 0.41
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "wellendichtring1__g",
+      "raw_name_hint": "wellendichtring1__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.85
+        },
+        {
+          "part_no": "GBX-SR-110",
+          "score": 0.85
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "casing_ot12__g",
+      "raw_name_hint": "casing_ot12__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-DP-130",
+          "score": 0.357
+        },
+        {
+          "part_no": "GBX-SHM-118",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-BH-128",
+          "score": 0.308
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "skt_schr35_x__g",
+      "raw_name_hint": "skt_schr35_x__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-SCS-121",
+          "score": 0.333
+        },
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.3
+        },
+        {
+          "part_no": "GBX-SHM-118",
+          "score": 0.3
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "ritzel_03_final_FINAL2__g",
+      "raw_name_hint": "ritzel_03_final_FINAL2__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.41
+        },
+        {
+          "part_no": "GBX-CL-111",
+          "score": 0.41
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "sicherungsring_39_old_DONOTUSE__g",
+      "raw_name_hint": "sicherungsring_39_old_DONOTUSE__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.283
+        },
+        {
+          "part_no": "GBX-SR-110",
+          "score": 0.283
+        },
+        {
+          "part_no": "GBX-OS-124",
+          "score": 0.222
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "needle_brg_36__g",
+      "raw_name_hint": "needle_brg_36__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-BRG-123",
+          "score": 0.5
+        },
+        {
+          "part_no": "GBX-NB-129",
+          "score": 0.5
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "in_shaft2_copy__g",
+      "raw_name_hint": "in_shaft2_copy__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-EC-127",
+          "score": 0.5
+        },
+        {
+          "part_no": "GBX-ISH-116",
+          "score": 0.5
+        },
+        {
+          "part_no": "GBX-OSH-115",
+          "score": 0.5
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "snapring.033__g",
+      "raw_name_hint": "snapring.033__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GR-101",
+          "score": 0.85
+        },
+        {
+          "part_no": "GBX-SR-110",
+          "score": 0.85
+        },
+        {
+          "part_no": "GBX-BH-128",
+          "score": 0.667
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "washer_fl_19_v3__g",
+      "raw_name_hint": "washer_fl_19_v3__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-TW-109",
+          "score": 0.5
+        },
+        {
+          "part_no": "GBX-FW-112",
+          "score": 0.5
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    },
+    {
+      "mesh_id": "hel_gear_18_old_DONOTUSE__g",
+      "raw_name_hint": "hel_gear_18_old_DONOTUSE__g",
+      "top_candidates": [
+        {
+          "part_no": "GBX-GLG-102",
+          "score": 0.25
+        },
+        {
+          "part_no": "GBX-GB-105",
+          "score": 0.25
+        },
+        {
+          "part_no": "GBX-GC-107",
+          "score": 0.25
+        }
+      ],
+      "reason": "top two candidates too close to call from text alone \u2014 needs visual/geometric disambiguation"
+    }
+  ],
+  "suspect_meshes": [
+    {
+      "mesh_id": "Object.086__g",
+      "raw_name_hint": "Object.086__g"
+    },
+    {
+      "mesh_id": "solid_52__g",
+      "raw_name_hint": "solid_52__g"
+    },
+    {
+      "mesh_id": "Object.378__g",
+      "raw_name_hint": "Object.378__g"
+    },
+    {
+      "mesh_id": "sechskant28 (2)__g",
+      "raw_name_hint": "sechskant28 (2)__g"
+    },
+    {
+      "mesh_id": "oilseal.038_old_DONOTUSE__g",
+      "raw_name_hint": "oilseal.038_old_DONOTUSE__g"
+    },
+    {
+      "mesh_id": "simmerring.023 (2)__g",
+      "raw_name_hint": "simmerring.023 (2)__g"
+    },
+    {
+      "mesh_id": "cluster_blk14 (2)__g",
+      "raw_name_hint": "cluster_blk14 (2)__g"
+    },
+    {
+      "mesh_id": "endcap7 (2)__g",
+      "raw_name_hint": "endcap7 (2)__g"
+    },
+    {
+      "mesh_id": "Object.157__g",
+      "raw_name_hint": "Object.157__g"
+    },
+    {
+      "mesh_id": "brg_cyl.030 (2)__g",
+      "raw_name_hint": "brg_cyl.030 (2)__g"
+    },
+    {
+      "mesh_id": "Object.900__g",
+      "raw_name_hint": "Object.900__g"
+    },
+    {
+      "mesh_id": "dichthalter.033 (2)__g",
+      "raw_name_hint": "dichthalter.033 (2)__g"
+    },
+    {
+      "mesh_id": "spur_out_04 (2)__g",
+      "raw_name_hint": "spur_out_04 (2)__g"
+    },
+    {
+      "mesh_id": "solid_33__g",
+      "raw_name_hint": "solid_33__g"
+    },
+    {
+      "mesh_id": "cplg_flg_04 (2)__g",
+      "raw_name_hint": "cplg_flg_04 (2)__g"
+    },
+    {
+      "mesh_id": "Object.417__g",
+      "raw_name_hint": "Object.417__g"
+    },
+    {
+      "mesh_id": "Object.662__g",
+      "raw_name_hint": "Object.662__g"
+    },
+    {
+      "mesh_id": "schraegverz.008 (2)__g",
+      "raw_name_hint": "schraegverz.008 (2)__g"
+    },
+    {
+      "mesh_id": "gr_ring.023 (2)__g",
+      "raw_name_hint": "gr_ring.023 (2)__g"
+    },
+    {
+      "mesh_id": "thr_washer.003 (2)__g",
+      "raw_name_hint": "thr_washer.003 (2)__g"
+    },
+    {
+      "mesh_id": "sicherungsring_39_old_DONOTUSE__g",
+      "raw_name_hint": "sicherungsring_39_old_DONOTUSE__g"
+    },
+    {
+      "mesh_id": "radblock_25_old_DONOTUSE__g",
+      "raw_name_hint": "radblock_25_old_DONOTUSE__g"
+    },
+    {
+      "mesh_id": "layshft.035 (2)__g",
+      "raw_name_hint": "layshft.035 (2)__g"
+    },
+    {
+      "mesh_id": "Object.589__g",
+      "raw_name_hint": "Object.589__g"
+    },
+    {
+      "mesh_id": "brg_cyl_24 (2)__g",
+      "raw_name_hint": "brg_cyl_24 (2)__g"
+    },
+    {
+      "mesh_id": "hel_gear_18_old_DONOTUSE__g",
+      "raw_name_hint": "hel_gear_18_old_DONOTUSE__g"
+    },
+    {
+      "mesh_id": "solid_61__g",
+      "raw_name_hint": "solid_61__g"
+    },
+    {
+      "mesh_id": "Object.676__g",
+      "raw_name_hint": "Object.676__g"
+    }
+  ],
+  "summary": {
+    "total_meshes": 102,
+    "matched_meshes": 41,
+    "unmatched_meshes": 36,
+    "ambiguous_meshes": 25,
+    "suspect_meshes": 28,
+    "parts_with_qty_mismatch": 12
+  }
+}

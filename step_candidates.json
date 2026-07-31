@@ -1,0 +1,526 @@
+{
+  "10-10": {
+    "step_id": "10-10",
+    "step_title": "Drain & remove breather plug",
+    "top_part_id": "GBX-BRP-120",
+    "part_to_remove": "Breather / Filler Plug",
+    "top_score": 0.3421,
+    "candidates": [
+      {
+        "part_id": "GBX-BRP-120",
+        "description": "Breather / Filler Plug",
+        "score": 0.3421
+      },
+      {
+        "part_id": "GBX-SG-131",
+        "description": "Oil Level Sight Glass",
+        "score": 0.3421
+      },
+      {
+        "part_id": "GBX-MF-126",
+        "description": "Mounting Flange",
+        "score": 0.1562
+      },
+      {
+        "part_id": "GBX-CF-117",
+        "description": "Coupling Flange",
+        "score": 0.1562
+      }
+    ]
+  },
+  "10-20": {
+    "step_id": "10-20",
+    "step_title": "Remove front cover flange bolts",
+    "top_part_id": "GBX-HXB-122",
+    "part_to_remove": "Cover Hex Bolt (DIN 933)",
+    "top_score": 0.4286,
+    "candidates": [
+      {
+        "part_id": "GBX-HXB-122",
+        "description": "Cover Hex Bolt (DIN 933)",
+        "score": 0.4286
+      },
+      {
+        "part_id": "GBX-BH-128",
+        "description": "Bearing Housing Boss",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-MF-126",
+        "description": "Mounting Flange",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-CF-117",
+        "description": "Coupling Flange",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-GR-101",
+        "description": "Internal Ring Gear",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-SR-110",
+        "description": "External Snap Ring",
+        "score": 0.1818
+      }
+    ]
+  },
+  "10-30": {
+    "step_id": "10-30",
+    "step_title": "Extract locating dowel pins",
+    "top_part_id": "GBX-DP-130",
+    "part_to_remove": "Locating Dowel Pin (DIN 6325)",
+    "top_score": 0.4286,
+    "candidates": [
+      {
+        "part_id": "GBX-DP-130",
+        "description": "Locating Dowel Pin (DIN 6325)",
+        "score": 0.4286
+      },
+      {
+        "part_id": "GBX-HXB-122",
+        "description": "Cover Hex Bolt (DIN 933)",
+        "score": 0.1818
+      }
+    ]
+  },
+  "20-10": {
+    "step_id": "20-10",
+    "step_title": "Remove drive-end front bearing cap",
+    "top_part_id": "GBX-BC-108",
+    "part_to_remove": "Bearing Retainer Cap",
+    "top_score": 0.6667,
+    "candidates": [
+      {
+        "part_id": "GBX-BC-108",
+        "description": "Bearing Retainer Cap",
+        "score": 0.6667
+      },
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.5714
+      },
+      {
+        "part_id": "GBX-GP-104",
+        "description": "Input Pinion",
+        "score": 0.5714
+      }
+    ]
+  },
+  "20-20": {
+    "step_id": "20-20",
+    "step_title": "Remove drive-end rear bearing cap",
+    "top_part_id": "GBX-BC-108",
+    "part_to_remove": "Bearing Retainer Cap",
+    "top_score": 0.4286,
+    "candidates": [
+      {
+        "part_id": "GBX-BC-108",
+        "description": "Bearing Retainer Cap",
+        "score": 0.4286
+      },
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.32
+      },
+      {
+        "part_id": "GBX-BH-128",
+        "description": "Bearing Housing Boss",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-SRP-119",
+        "description": "Seal Retainer Plate",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-GP-104",
+        "description": "Input Pinion",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-BRG-123",
+        "description": "Cylindrical Roller Bearing",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-NB-129",
+        "description": "Needle Roller Bearing",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-SHM-118",
+        "description": "Adjusting Shim / Spacer",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-SCS-121",
+        "description": "Socket Cap Screw (DIN 912)",
+        "score": 0.1818
+      }
+    ]
+  },
+  "20-30": {
+    "step_id": "20-30",
+    "step_title": "Free the A-side mid-ring bolts",
+    "top_part_id": "GBX-BH-128",
+    "part_to_remove": "Bearing Housing Boss",
+    "top_score": 0.16,
+    "candidates": [
+      {
+        "part_id": "GBX-BH-128",
+        "description": "Bearing Housing Boss",
+        "score": 0.16
+      },
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.16
+      },
+      {
+        "part_id": "GBX-GR-101",
+        "description": "Internal Ring Gear",
+        "score": 0.16
+      },
+      {
+        "part_id": "GBX-HXB-122",
+        "description": "Cover Hex Bolt (DIN 933)",
+        "score": 0.16
+      },
+      {
+        "part_id": "GBX-SR-110",
+        "description": "External Snap Ring",
+        "score": 0.16
+      }
+    ]
+  },
+  "20-40": {
+    "step_id": "20-40",
+    "step_title": "Replace drive-end front oil seal",
+    "top_part_id": "GBX-OS-124",
+    "part_to_remove": "Radial Oil Seal (Simmerring)",
+    "top_score": 0.4706,
+    "candidates": [
+      {
+        "part_id": "GBX-OS-124",
+        "description": "Radial Oil Seal (Simmerring)",
+        "score": 0.4706
+      },
+      {
+        "part_id": "GBX-SRP-119",
+        "description": "Seal Retainer Plate",
+        "score": 0.2857
+      },
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.2857
+      },
+      {
+        "part_id": "GBX-GR-101",
+        "description": "Internal Ring Gear",
+        "score": 0.2857
+      },
+      {
+        "part_id": "GBX-SR-110",
+        "description": "External Snap Ring",
+        "score": 0.2857
+      },
+      {
+        "part_id": "GBX-SG-131",
+        "description": "Oil Level Sight Glass",
+        "score": 0.2857
+      }
+    ]
+  },
+  "20-50": {
+    "step_id": "20-50",
+    "step_title": "Withdraw input shaft & pinions",
+    "top_part_id": "GBX-EC-127",
+    "part_to_remove": "Shaft End Cap",
+    "top_score": 0.4,
+    "candidates": [
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.4
+      },
+      {
+        "part_id": "GBX-GP-104",
+        "description": "Input Pinion",
+        "score": 0.4
+      },
+      {
+        "part_id": "GBX-ISH-116",
+        "description": "Input Shaft",
+        "score": 0.4
+      }
+    ]
+  },
+  "20-60": {
+    "step_id": "20-60",
+    "step_title": "Remove input circlips & thrust washers",
+    "top_part_id": "GBX-CL-111",
+    "part_to_remove": "Internal Circlip (DIN 472)",
+    "top_score": 0.5714,
+    "candidates": [
+      {
+        "part_id": "GBX-CL-111",
+        "description": "Internal Circlip (DIN 472)",
+        "score": 0.5714
+      },
+      {
+        "part_id": "GBX-TW-109",
+        "description": "Thrust Washer",
+        "score": 0.4444
+      },
+      {
+        "part_id": "GBX-FW-112",
+        "description": "Flat Washer (DIN 125)",
+        "score": 0.4444
+      }
+    ]
+  },
+  "30-10": {
+    "step_id": "30-10",
+    "step_title": "Remove rear ring bolts",
+    "top_part_id": "GBX-HXB-122",
+    "part_to_remove": "Cover Hex Bolt (DIN 933)",
+    "top_score": 0.4286,
+    "candidates": [
+      {
+        "part_id": "GBX-HXB-122",
+        "description": "Cover Hex Bolt (DIN 933)",
+        "score": 0.4286
+      },
+      {
+        "part_id": "GBX-MF-126",
+        "description": "Mounting Flange",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-CF-117",
+        "description": "Coupling Flange",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-GR-101",
+        "description": "Internal Ring Gear",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-TW-109",
+        "description": "Thrust Washer",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-SR-110",
+        "description": "External Snap Ring",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-FW-112",
+        "description": "Flat Washer (DIN 125)",
+        "score": 0.1818
+      }
+    ]
+  },
+  "30-20": {
+    "step_id": "30-20",
+    "step_title": "Remove socket cap screws",
+    "top_part_id": "GBX-SCS-121",
+    "part_to_remove": "Socket Cap Screw (DIN 912)",
+    "top_score": 0.6667,
+    "candidates": [
+      {
+        "part_id": "GBX-SCS-121",
+        "description": "Socket Cap Screw (DIN 912)",
+        "score": 0.6667
+      },
+      {
+        "part_id": "GBX-HXB-122",
+        "description": "Cover Hex Bolt (DIN 933)",
+        "score": 0.4444
+      },
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.2667
+      },
+      {
+        "part_id": "GBX-BC-108",
+        "description": "Bearing Retainer Cap",
+        "score": 0.2667
+      },
+      {
+        "part_id": "GBX-FW-112",
+        "description": "Flat Washer (DIN 125)",
+        "score": 0.2667
+      },
+      {
+        "part_id": "GBX-CL-111",
+        "description": "Internal Circlip (DIN 472)",
+        "score": 0.2667
+      },
+      {
+        "part_id": "GBX-DP-130",
+        "description": "Locating Dowel Pin (DIN 6325)",
+        "score": 0.2667
+      },
+      {
+        "part_id": "GBX-KEY-113",
+        "description": "Parallel Shaft Key (DIN 6885)",
+        "score": 0.2667
+      }
+    ]
+  },
+  "30-30": {
+    "step_id": "30-30",
+    "step_title": "Split housing halves",
+    "top_part_id": "GBX-HSG-100",
+    "part_to_remove": "Gearbox Housing Half",
+    "top_score": 0.3077,
+    "candidates": [
+      {
+        "part_id": "GBX-HSG-100",
+        "description": "Gearbox Housing Half",
+        "score": 0.3077
+      },
+      {
+        "part_id": "GBX-BH-128",
+        "description": "Bearing Housing Boss",
+        "score": 0.1739
+      },
+      {
+        "part_id": "GBX-SH-114",
+        "description": "Layshaft / Countershaft",
+        "score": 0.1739
+      },
+      {
+        "part_id": "GBX-SCS-121",
+        "description": "Socket Cap Screw (DIN 912)",
+        "score": 0.1739
+      }
+    ]
+  },
+  "30-40": {
+    "step_id": "30-40",
+    "step_title": "Lift out layshaft assemblies",
+    "top_part_id": "GBX-SH-114",
+    "part_to_remove": "Layshaft / Countershaft",
+    "top_score": 0.381,
+    "candidates": [
+      {
+        "part_id": "GBX-SH-114",
+        "description": "Layshaft / Countershaft",
+        "score": 0.381
+      },
+      {
+        "part_id": "GBX-HSG-100",
+        "description": "Gearbox Housing Half",
+        "score": 0.2222
+      },
+      {
+        "part_id": "GBX-EC-127",
+        "description": "Shaft End Cap",
+        "score": 0.2222
+      },
+      {
+        "part_id": "GBX-ISH-116",
+        "description": "Input Shaft",
+        "score": 0.2222
+      },
+      {
+        "part_id": "GBX-OSH-115",
+        "description": "Output Shaft",
+        "score": 0.2222
+      },
+      {
+        "part_id": "GBX-KEY-113",
+        "description": "Parallel Shaft Key (DIN 6885)",
+        "score": 0.2222
+      }
+    ]
+  },
+  "30-50": {
+    "step_id": "30-50",
+    "step_title": "Strip cluster & helical gears",
+    "top_part_id": "GBX-GH-103",
+    "part_to_remove": "Helical Reduction Gear",
+    "top_score": 0.4286,
+    "candidates": [
+      {
+        "part_id": "GBX-GH-103",
+        "description": "Helical Reduction Gear",
+        "score": 0.4286
+      },
+      {
+        "part_id": "GBX-GC-107",
+        "description": "Cluster Gear",
+        "score": 0.32
+      },
+      {
+        "part_id": "GBX-KEY-113",
+        "description": "Parallel Shaft Key (DIN 6885)",
+        "score": 0.32
+      }
+    ]
+  },
+  "30-60": {
+    "step_id": "30-60",
+    "step_title": "Replace needle bearings",
+    "top_part_id": "GBX-NB-129",
+    "part_to_remove": "Needle Roller Bearing",
+    "top_score": 0.4286,
+    "candidates": [
+      {
+        "part_id": "GBX-NB-129",
+        "description": "Needle Roller Bearing",
+        "score": 0.4286
+      },
+      {
+        "part_id": "GBX-BRG-123",
+        "description": "Cylindrical Roller Bearing",
+        "score": 0.32
+      },
+      {
+        "part_id": "GBX-BH-128",
+        "description": "Bearing Housing Boss",
+        "score": 0.1818
+      },
+      {
+        "part_id": "GBX-BC-108",
+        "description": "Bearing Retainer Cap",
+        "score": 0.1818
+      }
+    ]
+  },
+  "30-70": {
+    "step_id": "30-70",
+    "step_title": "Renew snap rings, shims & sleeves",
+    "top_part_id": "GBX-SR-110",
+    "part_to_remove": "External Snap Ring",
+    "top_score": 0.5,
+    "candidates": [
+      {
+        "part_id": "GBX-SR-110",
+        "description": "External Snap Ring",
+        "score": 0.5
+      },
+      {
+        "part_id": "GBX-DS-125",
+        "description": "Distance Sleeve",
+        "score": 0.381
+      },
+      {
+        "part_id": "GBX-SHM-118",
+        "description": "Adjusting Shim / Spacer",
+        "score": 0.381
+      }
+    ]
+  }
+}

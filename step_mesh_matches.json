@@ -1,0 +1,324 @@
+{
+  "10-10": {
+    "GBX-BRP-120": {
+      "involved": true,
+      "mesh_ids": [
+        "breather_20_imp__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-BRP-120 is the breather/filler plug, which matches the description in Step 10-10 of unscrewing this component from the top of the housing."
+    }
+  },
+  "10-20": {
+    "GBX-HXB-122": {
+      "involved": true,
+      "mesh_ids": [
+        "bolt_m6_09__g",
+        "hexbolt7__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-HXB-122 matches the description of Cover Hex Bolt (DIN 933) and is involved in removing front cover flange bolts."
+    },
+    "GBX-GR-101": {
+      "involved": false,
+      "mesh_ids": [
+        "zahnrad_gr.029__g",
+        "helix_gr_02_rev04__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-GR-101 is an Internal Ring Gear and does not match the description of bolts or flange components."
+    },
+    "GBX-SR-110": {
+      "involved": false,
+      "mesh_ids": [
+        "endcap7 (2)__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-SR-110 is an External Snap Ring and does not match the description of bolts or flange components."
+    }
+  },
+  "10-30": {
+    "GBX-DP-130": {
+      "involved": true,
+      "mesh_ids": [
+        "pin_loc.005_rev04__g",
+        "dowel_22_x__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-DP-130 is identified as a locating dowel pin, which matches the step description of extracting locating dowel pins from the front cover mating face. The mesh_ids provided for this part include 'pin_loc.005_rev04__g' and 'dowel_22_x__g', both of which are relevant to locating dowel pins."
+    },
+    "GBX-HXB-122": {
+      "involved": false,
+      "mesh_ids": [
+        "bolt_m6_09__g",
+        "hexbolt7__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-HXB-122 is identified as a cover hex bolt, which does not match the step description of extracting locating dowel pins. The mesh_ids provided for this part include 'bolt_m6_09__g' and 'hexbolt7__g', both of which are relevant to hex bolts but not to locating dowel pins."
+    }
+  },
+  "20-10": {
+    "mesh_matches": {},
+    "reasoning": "no renderable candidates with mesh_ids"
+  },
+  "20-20": {
+    "GBX-SRP-119": {
+      "involved": false,
+      "mesh_ids": [
+        "seal_plate.010_v3__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The part GBX-SRP-119 is a Seal Retainer Plate, which is not typically involved in the removal of a rear bearing cap or its retainer."
+    },
+    "GBX-BRG-123": {
+      "involved": false,
+      "mesh_ids": [
+        "roller_brg.035_final__g",
+        "brg_cyl.030 (2)__g",
+        "roller_brg_30_rev04__g",
+        "brg_cyl_24 (2)__g",
+        "brg_cyl14__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The part GBX-BRG-123 is a Cylindrical Roller Bearing, which is not directly involved in the removal of a rear bearing cap or its retainer."
+    },
+    "GBX-SCS-121": {
+      "involved": false,
+      "mesh_ids": [
+        "capscrw.037_rev04__g",
+        "capscrw_37__g",
+        "capscrw21__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The part GBX-SCS-121 is a Socket Cap Screw, which is not typically involved in the removal of a rear bearing cap or its retainer."
+    }
+  },
+  "20-30": {
+    "GBX-GR-101": {
+      "involved": false,
+      "mesh_ids": [
+        "zahnrad_gr.029__g",
+        "helix_gr_02_rev04__g",
+        "helix_gr13_copy__g",
+        "gr_ring.023 (2)__g",
+        "helix_gr_08_x__g",
+        "snapring.006_final_FINAL2__g"
+      ],
+      "confidence": "low",
+      "reasoning": "This part is an internal ring gear, which is not directly involved in the removal of mid-ring bolts."
+    },
+    "GBX-HXB-122": {
+      "involved": true,
+      "mesh_ids": [
+        "bolt_m6_09__g",
+        "hexbolt7__g",
+        "hexbolt.020_v3__g",
+        "bolt_m6.022_copy__g",
+        "hexbolt32_copy__g",
+        "bolt_m6_31_final__g",
+        "bolt_m6_21_neu__g",
+        "bolt_m6_38_rev04__g",
+        "hexbolt24_neu__g"
+      ],
+      "confidence": "high",
+      "reasoning": "This part is a cover hex bolt, which is used to retain the mid-ring bolts and needs to be removed as per the service manual."
+    },
+    "GBX-SR-110": {
+      "involved": false,
+      "mesh_ids": [
+        "endcap7 (2)__g"
+      ],
+      "confidence": "low",
+      "reasoning": "This part is an external snap ring, which does not directly relate to the removal of mid-ring bolts."
+    }
+  },
+  "20-40": {
+    "GBX-OS-124": {
+      "involved": true,
+      "mesh_ids": [
+        "simmerring.023 (2)__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-OS-124 is labeled as a Radial Oil Seal (Simmering type), which matches the description in Step 20-40 for replacing the drive-end front oil seal."
+    },
+    "GBX-SRP-119": {
+      "involved": false,
+      "mesh_ids": [
+        "seal_plate.010_v3__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-SRP-119 is labeled as a Seal Retainer Plate, which does not match the description of replacing an oil seal."
+    },
+    "GBX-GR-101": {
+      "involved": false,
+      "mesh_ids": [
+        "zahnrad_gr.029__g",
+        "helix_gr_02_rev04__g",
+        "helix_gr13_copy__g",
+        "gr_ring.023 (2)__g",
+        "helix_gr_08_x__g",
+        "snapring.006_final_FINAL2__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-GR-101 is labeled as an Internal Ring Gear, which does not match the description of replacing an oil seal."
+    },
+    "GBX-SR-110": {
+      "involved": false,
+      "mesh_ids": [
+        "endcap7 (2)__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-SR-110 is labeled as an External Snap Ring, which does not match the description of replacing an oil seal."
+    }
+  },
+  "20-50": {
+    "mesh_matches": {},
+    "reasoning": "no renderable candidates with mesh_ids"
+  },
+  "20-60": {
+    "GBX-CL-111": {
+      "involved": true,
+      "mesh_ids": [
+        "circlip_i.002_x__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-CL-111 matches the description of an internal circlip (DIN 472) and is listed as a candidate for this step, indicating it is involved in the removal process."
+    }
+  },
+  "30-10": [
+    {
+      "GBX-HXB-122": {
+        "involved": true,
+        "mesh_ids": [
+          "bolt_m6_09__g",
+          "hexbolt7__g"
+        ],
+        "confidence": "high",
+        "reasoning": "The candidate part GBX-HXB-122 corresponds to the Cover Hex Bolt (DIN 933), which is mentioned in Step 30-10 as being removed and refitted with a torque of 9.5 Nm, indicating its involvement."
+      }
+    },
+    {
+      "GBX-SR-110": {
+        "involved": false,
+        "mesh_ids": [
+          "endcap7 (2)__g"
+        ],
+        "confidence": "low",
+        "reasoning": "The candidate part GBX-SR-110 corresponds to the External Snap Ring, which is not mentioned in Step 30-10 and thus is not involved."
+      }
+    },
+    {
+      "GBX-GR-101": {
+        "involved": false,
+        "mesh_ids": [
+          "zahnrad_gr.029__g",
+          "helix_gr_02_rev04__g"
+        ],
+        "confidence": "low",
+        "reasoning": "The candidate part GBX-GR-101 corresponds to the Internal Ring Gear, which is not mentioned in Step 30-10 and thus is not involved."
+      }
+    }
+  ],
+  "30-20": {
+    "GBX-SCS-121": {
+      "involved": true,
+      "mesh_ids": [
+        "capscrw.037_rev04__g",
+        "capscrw_37__g",
+        "capscrw21__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-SCS-121 matches the description of a socket cap screw (DIN 912) and is listed as one of the parts to be removed in step 30-20."
+    }
+  },
+  "30-30": {
+    "GBX-HSG-100": {
+      "involved": true,
+      "mesh_ids": [
+        "gehaeuse_half_11__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-HSG-100 is the Gearbox Housing Half, which is involved in splitting the housing halves as described. The mesh_id 'gehaeuse_half_11__g' corresponds to this part."
+    },
+    "GBX-SH-114": {
+      "involved": false,
+      "mesh_ids": [
+        "layshft6__g",
+        "layshft.035 (2)__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-SH-114 is the Layshaft / Countershaft, which does not directly participate in splitting the housing halves as described."
+    },
+    "GBX-SCS-121": {
+      "involved": false,
+      "mesh_ids": [
+        "capscrw.037_rev04__g",
+        "capscrw_37__g",
+        "capscrw21__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-SCS-121 is the Socket Cap Screw, which is not involved in splitting the housing halves as described. It might be used later for securing parts."
+    }
+  },
+  "30-40": {
+    "GBX-SH-114": {
+      "involved": true,
+      "mesh_ids": [
+        "layshft6__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-SH-114 is labeled as Layshaft / Countershaft, which matches the step description of lifting out layshaft assemblies. The mesh_id 'layshft6__g' corresponds to this part in the 3D model."
+    },
+    "GBX-HSG-100": {
+      "involved": false,
+      "mesh_ids": [
+        "gehaeuse_half_11__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-HSG-100 is labeled as Gearbox Housing Half, which does not match the step description of lifting out layshaft assemblies. The mesh_id 'gehaeuse_half_11__g' corresponds to this part in the 3D model."
+    },
+    "GBX-KEY-113": {
+      "involved": false,
+      "mesh_ids": [
+        "key_par19_v3__g",
+        "key_par_10__g"
+      ],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-KEY-113 is labeled as Parallel Shaft Key (DIN 6885), which does not match the step description of lifting out layshaft assemblies. The mesh_ids 'key_par19_v3__g' and 'key_par_10__g' correspond to this part in the 3D model."
+    }
+  },
+  "30-50": {
+    "GBX-GC-107": {
+      "involved": true,
+      "mesh_ids": [
+        "cluster_blk14__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-GC-107 is labeled as a cluster gear, which aligns with the step of stripping cluster gears. The mesh_id 'cluster_blk14__g' corresponds to this part in the 3D model."
+    },
+    "GBX-KEY-113": {
+      "involved": false,
+      "mesh_ids": [],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-KEY-113 is a parallel shaft key, which does not directly relate to the step of stripping cluster gears and helical reduction gears. The mesh_ids provided do not match any parts involved in this specific repair step."
+    }
+  },
+  "30-60": {
+    "GBX-BRG-123": {
+      "involved": false,
+      "mesh_ids": [],
+      "confidence": "low",
+      "reasoning": "The candidate part GBX-BRG-123 is a cylindrical roller bearing, which is not involved in the step of replacing needle bearings. The step specifically mentions needle roller bearing cages and their replacement."
+    }
+  },
+  "30-70": {
+    "GBX-SR-110": {
+      "involved": true,
+      "mesh_ids": [
+        "endcap7 (2)__g"
+      ],
+      "confidence": "high",
+      "reasoning": "The candidate part GBX-SR-110 is listed as an external snap ring, which aligns with the step of renewing both external snap rings. The mesh_id 'endcap7 (2)__g' matches the provided list for this part."
+    }
+  }
+}
