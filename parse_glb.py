@@ -7,8 +7,8 @@ import json
 import trimesh
 import numpy as np
 
-GLB_PATH = "/mnt/user-data/uploads/microscope.glb"
-OUT_PATH = "/home/claude/mesh_metadata.json"
+GLB_PATH = "gearbox_service_unit.glb"
+OUT_PATH = "mesh_metadata.json"
 
 scene = trimesh.load(GLB_PATH, process=False)
 
@@ -19,6 +19,7 @@ for name, geom in scene.geometry.items():
     centroid = geom.centroid.tolist()
     records.append({
         "mesh_id": name,
+        "raw_name_hint": name,   # unverified -- messy CAD export names, use as a weak hint only
         "vertex_count": int(len(geom.vertices)),
         "face_count": int(len(geom.faces)) if hasattr(geom, "faces") else None,
         "bbox_min": bbox[0].tolist(),

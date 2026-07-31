@@ -1,0 +1,15 @@
+date,inspector,part_no,feature,nominal,measured,unit,disposition
+2019-03-12,R.Steiner,GBX-HXB-122,thread M6x1,6.000,5.982,mm,PASS
+12/03/2019,R.Steiner,GBX-HXB-122,head A/F,10.00,9.97,mm,PASS
+2019-03-12,R.Steiner,GBX-DP-130,dia h6,4.000,4.001,mm,PASS
+2019-03-13,M.Okafor,GBX-OS-124,bore fit,24.00,24.11,mm,FAIL-oversize
+13.03.2019,M.Okafor,GBX-BRG-123,radial play,0.020,,mm,NOT MEASURED
+2019-03-13,M.Okafor,GBX-OS-124-B,lip wear,0.00,0.35,mm,REPLACE
+2019-03-14,R.Steiner,GBX-GH-103,flank pitting,class1,class3,DIN3979,REPLACE
+2019-03-14,R.Steiner,GBX-NB-129,cage wear,,visible,,REPLACE
+2019-03-14,auto,GBX-ZZ-999,n/a,0,0,,UNKNOWN PN
+2019-03-15,M.Okafor,GBX-SH-114,journal dia,25.000,24.996,mm,PASS
+2019-03-15,M.Okafor,GBX-SCS-121,preload,13,12.8,Nm,PASS
+2019-03-15,,GBX-SHM-118,thickness,0.15,0.148,mm,PASS
+2019-03-16,R.Steiner,GBX-BC-108,flatness,0.02,0.018,mm,PASS
+2019-03-16,R.Steiner,GBX-XX-000,corrosion,,,,VOID ROW

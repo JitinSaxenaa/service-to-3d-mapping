@@ -1,0 +1,137 @@
+{
+  "document": "SERVICE-STEPS-GBX450E",
+  "source": "WM-GBX-450E rev.C (extract, procedures 10-40)",
+  "note": "field naming inconsistencies preserved from upstream ETL",
+  "steps": [
+    {
+      "step_id": "10-10",
+      "procedure": "10",
+      "title": "Drain & remove breather plug",
+      "instruction": "Place unit on bench, output flange facing operator. Unscrew the breather/filler plug from the top of the housing (17 mm). Allow residual oil to drip for approx. 10 min. Check the sight glass for metal swarf.  NOTE: sight glass is not fitted on -E variants.",
+      "expected_part_count": "1"
+    },
+    {
+      "step_id": "10-20",
+      "procedure": "10",
+      "title": "Remove front cover flange bolts",
+      "instruction": "Remove the six M6 hex head bolts on the front cover flange (outer bolt circle) in a criss-cross pattern. Torque on refit: 9.5 Nm (84 lb-in). Do NOT confuse these with the mid-ring bolts -- flange bolts sit on the raised boss.",
+      "qty": 6,
+      "torque_ref": "see instruction"
+    },
+    {
+      "step_id": "10-30",
+      "procedure": "10",
+      "title": "Extract locating dowel pins",
+      "instruction": "Using a pin puller, withdraw all six locating dowel pins from the front cover mating face. Tag each pin with its bore position; pins are matched to their bores from factory honing."
+    },
+    {
+      "step_id": "20-10",
+      "procedure": "20",
+      "title": "Remove drive-end front bearing cap",
+      "instruction": "On the drive end (A-side, nearest the input pinion), remove the FRONT bearing retainer cap. Ref. GBX-BC-108. See Fig. 4-2.",
+      "expected_part_count": "1"
+    },
+    {
+      "step_id": "20-20",
+      "procedure": "20",
+      "title": "Remove drive-end rear bearing cap",
+      "instruction": "Rotate the unit and remove the REAR bearing retainer cap on the same (drive) end. Keep shim pack together -- shim thickness sets pinion mesh preload.",
+      "qty": 1
+    },
+    {
+      "step_id": "20-30",
+      "procedure": "20",
+      "title": "Free the A-side mid-ring bolts",
+      "instruction": "Slacken and remove both mid-ring retaining bolts on the drive end (mid bolt circle, z-mid row). CAUTION: bolts are grade 8.8 -- do not substitute."
+    },
+    {
+      "step_id": "20-40",
+      "procedure": "20",
+      "title": "Replace drive-end front oil seal",
+      "instruction": "Pry out the radial oil seal (Simmering type) from the drive-end front bore. Fit new seal GBX-OS-124-B flush to 0.5 mm below face; lip grease: Klueber GL-261. Old 0-ring must be discarded.",
+      "expected_part_count": "1"
+    },
+    {
+      "step_id": "20-50",
+      "procedure": "20",
+      "title": "Withdraw input shaft & pinions",
+      "instruction": "Support the input shaft and withdraw it together with both input pinions toward the drive end. Do not let the pinion teeth strike the case web.",
+      "qty": 3
+    },
+    {
+      "step_id": "20-60",
+      "procedure": "20",
+      "title": "Remove input circlips & thrust washers",
+      "instruction": "Remove the internal circlips (DIN 472) and both bronze thrust washers from the upper bores. Circlip pliers A-2 required."
+    },
+    {
+      "step_id": "30-10",
+      "procedure": "30",
+      "title": "Remove rear ring bolts",
+      "instruction": "Remove the six hex bolts of the rear bolt ring (rear cover row, opposite the front flange). Refit torque 9,5 Nm. One bolt is fitted with a bonded washer -- note its position.",
+      "expected_part_count": "6",
+      "torque_ref": "see instruction"
+    },
+    {
+      "step_id": "30-20",
+      "procedure": "30",
+      "title": "Remove socket cap screws",
+      "instruction": "Remove all six DIN 912 socket head cap screws (5 mm hex) from the case split line. Refit torque: 13 Nm / 115 lb-in / 132 kpcm.",
+      "qty": 6,
+      "torque_ref": "see instruction"
+    },
+    {
+      "step_id": "30-30",
+      "procedure": "30",
+      "title": "Split housing halves",
+      "instruction": "Using jacking screws in the cast bosses, separate the two housing halves evenly. NEVER insert a screwdriver in the split line. Lift the upper half clear of both layshafts."
+    },
+    {
+      "step_id": "30-40",
+      "procedure": "30",
+      "title": "Lift out layshaft assemblies",
+      "instruction": "Lift both layshaft (countershaft) assemblies out of the lower half. Keep A-side and B-side shafts separate; they are NOT interchangeable after run-in.",
+      "expected_part_count": "2"
+    },
+    {
+      "step_id": "30-50",
+      "procedure": "30",
+      "title": "Strip cluster & helical gears",
+      "instruction": "Press the cluster gear blocks and all helical reduction gears off their shafts. Inspect tooth flanks for pitting (max. allowable: DIN 3979 class 2). Mark gear-to-shaft clocking.",
+      "qty": 8
+    },
+    {
+      "step_id": "30-60",
+      "procedure": "30",
+      "title": "Replace needle bearings",
+      "instruction": "Drive out all six needle roller bearing cages from the case webs using drift T-4408 and press in new cages to a depth of 2.5 mm. Lube with assembly paste before fitting."
+    },
+    {
+      "step_id": "30-70",
+      "procedure": "30",
+      "title": "Renew snap rings, shims & sleeves",
+      "instruction": "Renew both external snap rings and the adjusting shim, and check both distance sleeves for scoring (replace if > 0.05 mm). Shim pack sets end-float 0.10-0.25 mm.",
+      "expected_part_count": "5"
+    },
+    {
+      "step_id": "40-10",
+      "procedure": "40",
+      "title": "Remove coupling flange & key",
+      "instruction": "Lock the output shaft and remove the coupling flange from its taper. Extract the parallel shaft keys (DIN 6885) from both keyways -- use key puller, do not lever against the seal face.",
+      "qty": 3
+    },
+    {
+      "step_id": "40-20",
+      "procedure": "40",
+      "title": "Withdraw output shaft & spur gear",
+      "instruction": "Withdraw the output shaft together with both output spur gears toward the B-side. Support the gear rim; combined mass approx. 6,2 kg."
+    },
+    {
+      "step_id": "40-30",
+      "procedure": "40",
+      "title": "Replace B-side bearings & seals",
+      "instruction": "On the output end, extract both cylindrical roller bearings and both radial oil seals, then refit the output-end bearing caps (front and rear) with new gaskets. Heat bearings to 80 degC max. for fitting; never use open flame.",
+      "expected_part_count": "6"
+    }
+  ]
+}

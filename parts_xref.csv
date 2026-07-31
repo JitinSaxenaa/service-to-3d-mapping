@@ -1,0 +1,19 @@
+oem_pn,description_family,supplier,supplier_pn,din_ref,status_note
+GBX-HXB-122,hex_bolt_cover,NORMTEIL AG,NRM-933-M6x16-8.8,DIN 933,current
+GBX-HXB-122,hex_bolt_cover,NORMTEIL AG,NRM-601-M6-OBS,DIN 601,OBSOLETE 2011 - do not order
+GBX-SCS-121,cap_screw,NORMTEIL AG,NRM-912-M5x20-12.9,DIN 912,current
+GBX-DP-130,dowel_pin,NORMTEIL AG,NRM-6325-4m6x12,DIN 7,current
+GBX-FW-112,flat_washer,NORMTEIL AG,NRM-125-A5.3,DIN 125,current
+GBX-CL-111,circlip,NORMTEIL AG,NRM-472-I22,DIN 472,current
+GBX-SR-110,snap_ring,NORMTEIL AG,NRM-471-A20,DIN 471,current
+GBX-KEY-113,shaft_key,NORMTEIL AG,NRM-6885-A5x5x14,DIN 6885,current
+GBX-BRG-123,roller_bearing,KUGELWERKE,KGW-NU204-E,DIN 5412,current
+GBX-NB-129,needle_bearing,KUGELWERKE,KGW-HK1210,DIN 618,current
+GBX-OS-124,oil_seal,DICHTTECHNIK,DFT-BA-20x35x7-NBR,DIN 3760,superseded by -B
+GBX-OS-124-B,oil_seal,DICHTTECHNIK,DFT-BA-20x35x7-FKM,DIN 3760,"current, FKM lip"
+GBX-TW-109,thrust_washer,GLEITLAGER GmbH,GLT-AS2035-CuSn8,,current
+GBX-SHM-118,shim_spacer,GLEITLAGER GmbH,GLT-PS20-015,,thickness on demand
+GBX-DS-125,sleeve_spacer,GLEITLAGER GmbH,GLT-DH20-28,,current
+GBX-BRP-120,breather_plug,ARMATURA KG,ARM-EV-G14,,current
+GBX-SG-131,sight_glass,ARMATURA KG,N/A,,"NSN discontinued, not fitted on -E"
+GBX-GI-106,gear_idler,works,in-house,,machined in-house

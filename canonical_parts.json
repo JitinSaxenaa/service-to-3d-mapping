@@ -1,0 +1,722 @@
+{
+  "source_priority": "SB-2019-04 > IPC-GBX-450E rev.B > WM-GBX-450E rev.C (per bulletin header)",
+  "step_corrections": {
+    "20-30": {
+      "was": "both (2) mid-ring bolts",
+      "is": "three (3) mid-ring bolts, drive end",
+      "note": "1998 text predates third boss added at casting rev.E"
+    },
+    "30-10": {
+      "was": "one bolt has bonded washer",
+      "is": "bonded washer deleted 2007, all 6 identical"
+    },
+    "10-10": {
+      "was": "check sight glass",
+      "is": "sight glass NOT FITTED on -E, inspect drained oil instead"
+    }
+  },
+  "parts": {
+    "GBX-BH-128": {
+      "pn": "GBX-BH-128",
+      "desc": "Bearing Housing Boss",
+      "sub_asm": "A0-Housing",
+      "qty": 2,
+      "material": "Cast iron",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-BRP-120": {
+      "pn": "GBX-BRP-120",
+      "desc": "Breather / Filler Plug",
+      "sub_asm": "A0-Housing",
+      "qty": 1,
+      "material": "Brass CW614N",
+      "unit_note": null,
+      "torque": "25 Nm, sealant on 2nd thread",
+      "suppliers": [
+        {
+          "supplier": "ARMATURA KG",
+          "supplier_pn": "ARM-EV-G14",
+          "din_ref": "",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-HSG-100": {
+      "pn": "GBX-HSG-100",
+      "desc": "Gearbox Housing Half",
+      "sub_asm": "A0-Housing",
+      "qty": 2,
+      "material": "Cast iron GG-25",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-MF-126": {
+      "pn": "GBX-MF-126",
+      "desc": "Mounting Flange",
+      "sub_asm": "A0-Housing",
+      "qty": 2,
+      "material": "EN-GJS-500",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-SRP-119": {
+      "pn": "GBX-SRP-119",
+      "desc": "Seal Retainer Plate",
+      "sub_asm": "A0-Housing",
+      "qty": 2,
+      "material": "S235JR",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-EC-127": {
+      "pn": "GBX-EC-127",
+      "desc": "Shaft End Cap",
+      "sub_asm": "A0-Housing",
+      "qty": 2,
+      "material": "EN-GJL-200",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GP-104": {
+      "pn": "GBX-GP-104",
+      "desc": "Input Pinion",
+      "sub_asm": "A1-Input",
+      "qty": 2,
+      "material": "20MnCr5, ground",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-ISH-116": {
+      "pn": "GBX-ISH-116",
+      "desc": "Input Shaft",
+      "sub_asm": "A1-Input",
+      "qty": 1,
+      "material": "20MnCr5",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-CF-117": {
+      "pn": "GBX-CF-117",
+      "desc": "Coupling Flange",
+      "sub_asm": "A2-Output",
+      "qty": 1,
+      "material": "C45",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-OSH-115": {
+      "pn": "GBX-OSH-115",
+      "desc": "Output Shaft",
+      "sub_asm": "A2-Output",
+      "qty": 1,
+      "material": "42CrMo4, hardened",
+      "unit_note": "corrected cm->mm per SB-2019-04",
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GLG-102": {
+      "pn": "GBX-GLG-102",
+      "desc": "Output Spur Gear",
+      "sub_asm": "A2-Output",
+      "qty": 2,
+      "material": "16MnCr5, carburized",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GB-105": {
+      "pn": "GBX-GB-105",
+      "desc": "Bevel Gear",
+      "sub_asm": "A3-Layshaft",
+      "qty": 2,
+      "material": "17NiCrMo6-4",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GC-107": {
+      "pn": "GBX-GC-107",
+      "desc": "Cluster Gear",
+      "sub_asm": "A3-Layshaft",
+      "qty": 2,
+      "material": "18CrNiMo7-6",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GH-103": {
+      "pn": "GBX-GH-103",
+      "desc": "Helical Reduction Gear",
+      "sub_asm": "A3-Layshaft",
+      "qty": 6,
+      "material": "16MnCr5, carburized",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [
+        {
+          "date": "2019-03-14",
+          "inspector": "R.Steiner",
+          "part_no": "GBX-GH-103",
+          "feature": "flank pitting",
+          "nominal": "class1",
+          "measured": "class3",
+          "unit": "DIN3979",
+          "disposition": "REPLACE"
+        }
+      ],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GI-106": {
+      "pn": "GBX-GI-106",
+      "desc": "Idler Gear",
+      "sub_asm": "A3-Layshaft",
+      "qty": 2,
+      "material": "16MnCr5",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "works",
+          "supplier_pn": "in-house",
+          "din_ref": "",
+          "status_note": "machined in-house"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-GR-101": {
+      "pn": "GBX-GR-101",
+      "desc": "Internal Ring Gear",
+      "sub_asm": "A3-Layshaft",
+      "qty": 2,
+      "material": "18CrNiMo7-6, case-hardened",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-SH-114": {
+      "pn": "GBX-SH-114",
+      "desc": "Layshaft / Countershaft",
+      "sub_asm": "A3-Layshaft",
+      "qty": 2,
+      "material": "42CrMo4, hardened",
+      "unit_note": "corrected cm->mm per SB-2019-04",
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [
+        {
+          "date": "2019-03-15",
+          "inspector": "M.Okafor",
+          "part_no": "GBX-SH-114",
+          "feature": "journal dia",
+          "nominal": "25.000",
+          "measured": "24.996",
+          "unit": "mm",
+          "disposition": "PASS"
+        }
+      ],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-BC-108": {
+      "pn": "GBX-BC-108",
+      "desc": "Bearing Retainer Cap",
+      "sub_asm": "A4-Bearings",
+      "qty": 4,
+      "material": "EN-GJL-250",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [],
+      "inspection_records": [
+        {
+          "date": "2019-03-16",
+          "inspector": "R.Steiner",
+          "part_no": "GBX-BC-108",
+          "feature": "flatness",
+          "nominal": "0.02",
+          "measured": "0.018",
+          "unit": "mm",
+          "disposition": "PASS"
+        }
+      ],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-BRG-123": {
+      "pn": "GBX-BRG-123",
+      "desc": "Cylindrical Roller Bearing",
+      "sub_asm": "A4-Bearings",
+      "qty": 4,
+      "material": "Bearing steel 100Cr6",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "KUGELWERKE",
+          "supplier_pn": "KGW-NU204-E",
+          "din_ref": "DIN 5412",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-13",
+          "inspector": "M.Okafor",
+          "part_no": "GBX-BRG-123",
+          "feature": "radial play",
+          "nominal": "0.020",
+          "measured": "",
+          "unit": "mm",
+          "disposition": "NOT MEASURED"
+        }
+      ],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-DS-125": {
+      "pn": "GBX-DS-125",
+      "desc": "Distance Sleeve",
+      "sub_asm": "A4-Bearings",
+      "qty": 2,
+      "material": "St 52-3",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "GLEITLAGER GmbH",
+          "supplier_pn": "GLT-DH20-28",
+          "din_ref": "",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "GLT-DH20-28",
+          "qty": 2,
+          "disposition": "inspected, re-used, qty 0 billed",
+          "steps": [
+            "30-70"
+          ]
+        }
+      ]
+    },
+    "GBX-NB-129": {
+      "pn": "GBX-NB-129",
+      "desc": "Needle Roller Bearing",
+      "sub_asm": "A4-Bearings",
+      "qty": 6,
+      "material": "100Cr6",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "KUGELWERKE",
+          "supplier_pn": "KGW-HK1210",
+          "din_ref": "DIN 618",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-14",
+          "inspector": "R.Steiner",
+          "part_no": "GBX-NB-129",
+          "feature": "cage wear",
+          "nominal": "",
+          "measured": "visible",
+          "unit": "",
+          "disposition": "REPLACE"
+        }
+      ],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "KGW-HK1210",
+          "qty": 6,
+          "disposition": "all cage positions renewed",
+          "steps": [
+            "30-60"
+          ]
+        }
+      ]
+    },
+    "GBX-OS-124": {
+      "pn": "GBX-OS-124",
+      "desc": "Radial Oil Seal (Simmerring)",
+      "sub_asm": "A4-Bearings",
+      "qty": 4,
+      "material": "NBR / steel",
+      "unit_note": null,
+      "bulletin_note": "FKM lip, same bore/envelope, physically interchangeable",
+      "superseded_by": "GBX-OS-124-B",
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "DICHTTECHNIK",
+          "supplier_pn": "DFT-BA-20x35x7-NBR",
+          "din_ref": "DIN 3760",
+          "status_note": "superseded by -B"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-13",
+          "inspector": "M.Okafor",
+          "part_no": "GBX-OS-124",
+          "feature": "bore fit",
+          "nominal": "24.00",
+          "measured": "24.11",
+          "unit": "mm",
+          "disposition": "FAIL-oversize"
+        }
+      ],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-TW-109": {
+      "pn": "GBX-TW-109",
+      "desc": "Thrust Washer",
+      "sub_asm": "A4-Bearings",
+      "qty": 2,
+      "material": "CuSn8 bronze",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "GLEITLAGER GmbH",
+          "supplier_pn": "GLT-AS2035-CuSn8",
+          "din_ref": "",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "GLT-AS2035-CuSn8",
+          "qty": 2,
+          "disposition": "renewed on reassembly",
+          "steps": [
+            "20-60"
+          ]
+        }
+      ]
+    },
+    "GBX-SHM-118": {
+      "pn": "GBX-SHM-118",
+      "desc": "Adjusting Shim / Spacer",
+      "sub_asm": "A5-Fasteners",
+      "qty": 1,
+      "material": "Shim steel 1.4310",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "GLEITLAGER GmbH",
+          "supplier_pn": "GLT-PS20-015",
+          "din_ref": "",
+          "status_note": "thickness on demand"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-15",
+          "inspector": "",
+          "part_no": "GBX-SHM-118",
+          "feature": "thickness",
+          "nominal": "0.15",
+          "measured": "0.148",
+          "unit": "mm",
+          "disposition": "PASS"
+        }
+      ],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "GLT-PS20-015",
+          "qty": 1,
+          "disposition": "end-float shim, 0.15mm selected",
+          "steps": [
+            "30-70"
+          ]
+        }
+      ]
+    },
+    "GBX-HXB-122": {
+      "pn": "GBX-HXB-122",
+      "desc": "Cover Hex Bolt (DIN 933)",
+      "sub_asm": "A5-Fasteners",
+      "qty": 18,
+      "material": "Grade 8.8, zinc",
+      "unit_note": null,
+      "qty_catalogue_original": 16,
+      "bulletin_note": "2 added at casting rev.E, front flange. Was 16 in IPC rev.B.",
+      "torque": "9.5 Nm",
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-933-M6x16-8.8",
+          "din_ref": "DIN 933",
+          "status_note": "current"
+        },
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-601-M6-OBS",
+          "din_ref": "DIN 601",
+          "status_note": "OBSOLETE 2011 - do not order"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-12",
+          "inspector": "R.Steiner",
+          "part_no": "GBX-HXB-122",
+          "feature": "thread M6x1",
+          "nominal": "6.000",
+          "measured": "5.982",
+          "unit": "mm",
+          "disposition": "PASS"
+        },
+        {
+          "date": "2019-03-12",
+          "inspector": "R.Steiner",
+          "part_no": "GBX-HXB-122",
+          "feature": "head A/F",
+          "nominal": "10.00",
+          "measured": "9.97",
+          "unit": "mm",
+          "disposition": "PASS"
+        }
+      ],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "NRM-933-M6x16-8.8",
+          "qty": 15,
+          "disposition": "renewed where disturbed (full 18 recommended, declined)",
+          "steps": [
+            "10-20",
+            "20-30",
+            "30-10"
+          ]
+        }
+      ]
+    },
+    "GBX-SR-110": {
+      "pn": "GBX-SR-110",
+      "desc": "External Snap Ring",
+      "sub_asm": "A5-Fasteners",
+      "qty": 2,
+      "material": "Spring steel C67S",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-471-A20",
+          "din_ref": "DIN 471",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "NRM-471-A20",
+          "qty": 2,
+          "disposition": "renewed",
+          "steps": [
+            "30-70"
+          ]
+        }
+      ]
+    },
+    "GBX-FW-112": {
+      "pn": "GBX-FW-112",
+      "desc": "Flat Washer (DIN 125)",
+      "sub_asm": "A5-Fasteners",
+      "qty": 2,
+      "material": "A2-70 stainless",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-125-A5.3",
+          "din_ref": "DIN 125",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-CL-111": {
+      "pn": "GBX-CL-111",
+      "desc": "Internal Circlip (DIN 472)",
+      "sub_asm": "A5-Fasteners",
+      "qty": 2,
+      "material": "Spring steel",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-472-I22",
+          "din_ref": "DIN 472",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "NRM-472-I22",
+          "qty": 2,
+          "disposition": "renewed on reassembly",
+          "steps": [
+            "20-60"
+          ]
+        }
+      ]
+    },
+    "GBX-DP-130": {
+      "pn": "GBX-DP-130",
+      "desc": "Locating Dowel Pin (DIN 6325)",
+      "sub_asm": "A5-Fasteners",
+      "qty": 6,
+      "material": "Hardened steel",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-6325-4m6x12",
+          "din_ref": "DIN 7",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-12",
+          "inspector": "R.Steiner",
+          "part_no": "GBX-DP-130",
+          "feature": "dia h6",
+          "nominal": "4.000",
+          "measured": "4.001",
+          "unit": "mm",
+          "disposition": "PASS"
+        }
+      ],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-KEY-113": {
+      "pn": "GBX-KEY-113",
+      "desc": "Parallel Shaft Key (DIN 6885)",
+      "sub_asm": "A5-Fasteners",
+      "qty": 2,
+      "material": "C45K",
+      "unit_note": null,
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-6885-A5x5x14",
+          "din_ref": "DIN 6885",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    },
+    "GBX-SCS-121": {
+      "pn": "GBX-SCS-121",
+      "desc": "Socket Cap Screw (DIN 912)",
+      "sub_asm": "A5-Fasteners",
+      "qty": 6,
+      "material": "Grade 12.9",
+      "unit_note": null,
+      "torque": "13 Nm",
+      "suppliers": [
+        {
+          "supplier": "NORMTEIL AG",
+          "supplier_pn": "NRM-912-M5x20-12.9",
+          "din_ref": "DIN 912",
+          "status_note": "current"
+        }
+      ],
+      "inspection_records": [
+        {
+          "date": "2019-03-15",
+          "inspector": "M.Okafor",
+          "part_no": "GBX-SCS-121",
+          "feature": "preload",
+          "nominal": "13",
+          "measured": "12.8",
+          "unit": "Nm",
+          "disposition": "PASS"
+        }
+      ],
+      "work_order_WO-7741_consumption": [
+        {
+          "supplier_pn": "NRM-912-M5x20-12.9",
+          "qty": 6,
+          "disposition": "renewed",
+          "steps": [
+            "30-20"
+          ]
+        }
+      ]
+    },
+    "GBX-SG-131": {
+      "pn": "GBX-SG-131",
+      "desc": "Oil Level Sight Glass",
+      "sub_asm": "A0-Housing",
+      "qty": 0,
+      "material": null,
+      "unit_note": null,
+      "qty_catalogue_original": 0,
+      "bulletin_note": "NOT FITTED on -E variants -- inspect drained oil instead",
+      "torque": null,
+      "suppliers": [
+        {
+          "supplier": "ARMATURA KG",
+          "supplier_pn": "N/A",
+          "din_ref": "",
+          "status_note": "NSN discontinued, not fitted on -E"
+        }
+      ],
+      "inspection_records": [],
+      "work_order_WO-7741_consumption": []
+    }
+  }
+}

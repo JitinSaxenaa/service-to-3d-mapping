@@ -1,0 +1,25 @@
+WORK ORDER WO-7741                          ADLOID GEARWORKS SERVICE DIVISION
+==============================================================================
+Unit:        GBX-450E   S/N GBX-450E-0117        In: 2019-03-11   Out: 2019-03-18
+Complaint:   whine under load, oil weep at drive-end seal
+Reference:   WM-GBX-450E rev.C procedures 20 + 30; SB-2019-04
+Inspection:  see QA log export 2019-03-12..16 (inspection_log.csv)
+
+PARTS CONSUMED (by supplier PN -- see parts cross-reference for OEM numbers)
+------------------------------------------------------------------------------
+line  supplier_pn            qty   disposition
+ 1    DFT-BA-20x35x7-FKM      1    fitted, drive-end front bore        [20-40]
+ 2    KGW-HK1210              6    all cage positions renewed          [30-60]
+ 3    NRM-472-I22             2    renewed on reassembly               [20-60]
+ 4    GLT-AS2035-CuSn8        2    renewed on reassembly               [20-60]
+ 5    NRM-471-A20             2    renewed                             [30-70]
+ 6    GLT-PS20-015            1    end-float shim, 0.15 mm selected    [30-70]
+ 7    GLT-DH20-28             2    inspected, re-used -- qty 0 billed  [30-70]
+ 8    GBX-GI-106 (in-house)   0    STRUCK -- returned unused, idler not touched
+ 9    NRM-933-M6x16-8.8      15    renewed where disturbed             [10-20, 20-30, 30-10]
+      (full 18-bolt set renewal recommended per SB-2019-04; customer declined)
+10    NRM-912-M5x20-12.9      6    renewed                             [30-20]
+
+Labour: 14.5 h   Test run: PASS (contact pattern OK, temp 61 degC after 2 h)
+Sign-off: R. Steiner (fitter) / M. Okafor (QA)                     page 1 of 1
+==============================================================================

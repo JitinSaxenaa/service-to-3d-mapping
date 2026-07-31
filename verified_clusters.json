@@ -1,0 +1,198 @@
+{
+  "(148, 0.6)": {
+    "matched_families": {
+      "GBX-DP-130": {
+        "desc": "Locating Dowel Pin (DIN 6325)",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 1,
+        "confident_members": [
+          "pin_loc.005_rev04__g"
+        ],
+        "suspect_members": [],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      },
+      "GBX-HXB-122": {
+        "desc": "Cover Hex Bolt (DIN 933)",
+        "expected_qty_canonical": 18,
+        "total_members_in_cluster": 13,
+        "confident_members": [
+          "sechskant34_v3__g",
+          "bolt_m6_09__g",
+          "sechskant.034__g",
+          "hexbolt7__g",
+          "hexbolt.020_v3__g",
+          "sechskant29_imp__g",
+          "bolt_m6_31_final__g",
+          "bolt_m6_21_neu__g",
+          "bolt_m6_38_rev04__g",
+          "hexbolt24_neu__g"
+        ],
+        "suspect_members": [
+          "sechskant28 (2)__g",
+          "bolt_m6.022_copy__g",
+          "hexbolt32_copy__g"
+        ],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      },
+      "GBX-SCS-121": {
+        "desc": "Socket Cap Screw (DIN 912)",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 4,
+        "confident_members": [
+          "skt_schr.035_rev04__g",
+          "skt_schr_32_neu__g",
+          "skt_schr2__g",
+          "skt_schr35_x__g"
+        ],
+        "suspect_members": [],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      }
+    },
+    "unassigned_generic_names": [
+      "body_x75__g"
+    ]
+  },
+  "(116, 1.2)": {
+    "matched_families": {
+      "GBX-SCS-121": {
+        "desc": "Socket Cap Screw (DIN 912)",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 1,
+        "confident_members": [
+          "capscrw.037_rev04__g"
+        ],
+        "suspect_members": [],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      },
+      "GBX-DP-130": {
+        "desc": "Locating Dowel Pin (DIN 6325)",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 3,
+        "confident_members": [
+          "dowel.003__g",
+          "dowel_22_x__g",
+          "dowel_16_final__g"
+        ],
+        "suspect_members": [],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      }
+    },
+    "unassigned_generic_names": [
+      "Object.417__g",
+      "Object.589__g",
+      "mesh_7784d5__g"
+    ]
+  },
+  "(21722, 2.4)": {
+    "matched_families": {
+      "GBX-BRG-123": {
+        "desc": "Cylindrical Roller Bearing",
+        "expected_qty_canonical": 4,
+        "total_members_in_cluster": 4,
+        "confident_members": [
+          "roller_brg.035_final__g",
+          "roller_brg_30_rev04__g",
+          "brg_cyl14__g"
+        ],
+        "suspect_members": [
+          "brg_cyl.030 (2)__g"
+        ],
+        "count_matches_catalog": true,
+        "needs_vision_check": true
+      }
+    },
+    "unassigned_generic_names": []
+  },
+  "(116, 1.5)": {
+    "matched_families": {
+      "GBX-SCS-121": {
+        "desc": "Socket Cap Screw (DIN 912)",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 4,
+        "confident_members": [
+          "capscrw_37__g",
+          "zylschraube_29_neu__g",
+          "capscrw21__g",
+          "zylschraube8_final__g"
+        ],
+        "suspect_members": [],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      }
+    },
+    "unassigned_generic_names": [
+      "solid_33__g",
+      "mesh_b4502f__g"
+    ]
+  },
+  "(15566, 3.0)": {
+    "matched_families": {
+      "GBX-GH-103": {
+        "desc": "Helical Reduction Gear",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 5,
+        "confident_members": [
+          "helix_gr_02_rev04__g",
+          "helix_gr_08_x__g"
+        ],
+        "suspect_members": [
+          "helix_gr13_copy__g",
+          "schraegverz.008 (2)__g",
+          "hel_gear_18_old_DONOTUSE__g"
+        ],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      }
+    },
+    "unassigned_generic_names": [
+      "mesh_e73f3a__g"
+    ]
+  },
+  "(792, 2.4)": {
+    "matched_families": {
+      "GBX-OS-124": {
+        "desc": "Radial Oil Seal (Simmerring)",
+        "expected_qty_canonical": 4,
+        "total_members_in_cluster": 3,
+        "confident_members": [
+          "wellendichtring1__g"
+        ],
+        "suspect_members": [
+          "oilseal.038_old_DONOTUSE__g",
+          "simmerring.023 (2)__g"
+        ],
+        "count_matches_catalog": false,
+        "needs_vision_check": true
+      }
+    },
+    "unassigned_generic_names": [
+      "Object.662__g"
+    ]
+  },
+  "(116, 2.2)": {
+    "matched_families": {
+      "GBX-NB-129": {
+        "desc": "Needle Roller Bearing",
+        "expected_qty_canonical": 6,
+        "total_members_in_cluster": 6,
+        "confident_members": [
+          "nadellager_02_x__g",
+          "needle_brg7_imp__g",
+          "needle_brg.014_final__g",
+          "needle_brg_36__g",
+          "nadellager.034__g",
+          "nadellager_39_x__g"
+        ],
+        "suspect_members": [],
+        "count_matches_catalog": true,
+        "needs_vision_check": false
+      }
+    },
+    "unassigned_generic_names": []
+  }
+}
