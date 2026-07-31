@@ -7,11 +7,7 @@ real maintenance record: a bulletin that corrects the manual, a scanned parts
 catalogue, and a 3D model whose mesh names (`bolt_m6_09__g`, `hexbolt7__g`, ...)
 don't match any of it.
 
-> **Note on scope:** this document describes the GBX-450E gearbox pipeline that
-> is actually in this repo today. An earlier hackathon version of this project
-> targeted a microscope teardown with zero-catalog, fully anonymous mesh names
-> (`Mesh_113`, etc.) — that is a different test case with a different (simpler)
-> matching problem and is **not** what the scripts below implement.
+
 
 ---
 
